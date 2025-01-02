@@ -1,0 +1,13 @@
+JavaScript localStorage is a web storage feature that allows you to store key-value pairs in a browser. 
+Data persists even after the browser is closed, providing a method to save and retrieve data across 
+sessions, enhancing user experience by maintaining state and preferences.
+
+syntax:--->  ourStorage = window.localStorage;
+
+Key Features of localStorage
+1. Origin-Bound Storage: Data is stored per domain and is not shared across different origins.
+2. Persistent Storage: Data remains intact even if the browser is closed or the operating system is rebooted. 
+                       It will be available until manually cleared.
+3. Storage Limit: The storage limit for localStorage is 5MB, which is greater than the 4MB limit for cookies.
+4. No Automatic Transmission: Unlike cookies, localStorage data is not sent with every HTTP request, 
+                              making it a more efficient option for client-side storage.

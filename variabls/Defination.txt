@@ -1,0 +1,6 @@
+Feature:-     	                let	                                    const
+Reassignment:-                  Allowed	                                Not allowed
+Redeclaration:-	                Not allowed	                            Not allowed
+Initialization at Declaration:-	Optional	                            Mandatory
+Mutability of Object/Array:-    Mutable	                                Mutable
+Use Cases:-	                    Use when a variable’s value changes	    Use for constants or fixed references

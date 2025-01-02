@@ -1,0 +1,13 @@
+Destructuring in JavaScript is a syntax that allows you to extract values from arrays or properties 
+from objects and assign them to variables in a concise manner. 
+This makes your code more readable and less verbose.
+
+Array:-> In array destructuring, the position of elements in the array determines which values are assigned to the variables.
+
+Object:-> In object destructuring, the names of the properties are used to extract the corresponding values.
+
+Benefits of Destructuring
+1. Reduces boilerplate code.
+2. Makes variable assignment from complex objects and arrays more straightforward.
+3. Allows default values for variables during destructuring.
+4. Supports skipping and collecting remaining elements or properties.
