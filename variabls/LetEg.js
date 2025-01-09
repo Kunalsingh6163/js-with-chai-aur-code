@@ -10,3 +10,4 @@ console.log(a);
 
 // console.log(c); // ReferenceError: Cannot access 'c' before initialization
 let c = 15;
+

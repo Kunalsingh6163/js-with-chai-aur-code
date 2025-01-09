@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increase()">Add</button>   
+    <h2 id="value">0</h2>
+    <button onclick="decrease()">Sub</button>
+    <div id="filterItem"></div>
+
+    <script>
+        let count = 0;
+
+        const increase = () => {
+            count += 1;
+            updateCount();
+        };
+
+        const decrease = () => {
+            count -= 1;
+            updateCount();
+        };
+
+        const updateCount = () => {
+            document.getElementById("value").innerText = count;
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const myArr = [1, 2, 3, 2, 4, 5, 6, 3];
+            const sortedItem = myArr.filter(value => value > 2);
+
+            const container = document.getElementById("filterItem");
+            container.innerHTML = "";
+
+            sortedItem.forEach((value) => {
+                const p = document.createElement("p");
+                p.textContent = value;
+                container.appendChild(p);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -18,3 +18,13 @@ console.log(sum); // Output: 15
 const numbersNew = [5, 10, 2, 8, 1];
 const max = numbersNew.reduce((accumulator, currentValue) => (currentValue > accumulator ? currentValue : accumulator));
 console.log(max); // Output: 10
+
+
+//////////////////////////////////////////
+const numbersNew2 = [5, 10, 2, 8, 1, 15];
+
+const maxNumber = numbersNew2.reduce((max, current) => {
+  return current > max ? current : max;
+}, numbersNew2[0]); // Initial value is the first element of the array
+
+console.log(maxNumber); // Output: 10
