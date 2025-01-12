@@ -7,6 +7,5 @@ for(i=0; i<items.length; i++){
 for(i=0; i<items.length; i++){
    let off = items[i]/10;
    items[i] = items[i] - off
-
     console.log(`After 10% off the data is ${items[i]}`);
 };

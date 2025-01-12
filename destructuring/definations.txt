@@ -11,3 +11,4 @@ Benefits of Destructuring
 2. Makes variable assignment from complex objects and arrays more straightforward.
 3. Allows default values for variables during destructuring.
 4. Supports skipping and collecting remaining elements or properties.
+

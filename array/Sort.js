@@ -11,3 +11,7 @@ console.log(fruits); // Output: ["apple", "banana", "cherry", "date....]
 
 const ar = [ 10, 20, 25, 100 , 40]
 console.log(ar.sort((a,b) => a - b))
+
+const array = ['a', 'c' , 'b', 'e', 'd'];
+
+console.log(array.sort());
