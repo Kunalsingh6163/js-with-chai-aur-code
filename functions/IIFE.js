@@ -9,3 +9,11 @@ var result = (function() {
 })();
 
 console.log(result); // Output: 30
+
+
+//Eg-2
+// this is the exam[ple of IIFE (Immediately Invoked Function Expression)
+(function(){
+    console.log("hello");
+})
+();
