@@ -1,5 +1,12 @@
 const arrData = [3,5,7]; // undefined
-const arr = [2, 4, 5, 8, 10, 12];
+const arr = [2, 4, 5, 8, 10, 11,  12];
+
+
+console.log("Below uses find method")
+const findage = arr.filter((elem)=>{
+    return elem > 10
+    });
+    console.log("finding age",findage);
 
 const evenNumber = arr.find((i)=> i%2==0);
 console.log(evenNumber);
