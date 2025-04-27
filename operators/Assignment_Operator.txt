@@ -1,0 +1,7 @@
+Shorthand | Meaning         | Example Before | Example After
++=        | Addition        | x += 5         | x = x + 5
+-=        | Subtraction     | x -= 3         | x = x - 3
+*=        | Multiplication  | x *= 2         | x = x * 2
+/=        | Division        | x /= 4         | x = x / 4
+%=        | Modulus(remainder) | x %= 3      | x = x % 3
+**=       | Exponentiation  | x **= 2        | x = x ** 2
