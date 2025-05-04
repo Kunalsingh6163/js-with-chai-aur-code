@@ -1,0 +1,59 @@
+What are IIFEs (Immediately Invoked Function Expressions)?
+
+The Immediately Invoked Function Expression (IIFE) design pattern employs an anonymous function that gets executed 
+promptly after its definition.
+
+Key characteristics of IIFEs include localized variable scopes and immediate activation upon interpreter parsing.
+
+Code Example: IIFE
+Here is the JavaScript code:
+
+(function(){
+    var foo = 'bar';
+    console.log(foo);
+})();
+In this example, the function is enclosed within parentheses, ensuring the enclosed function is evaluated as an expression. 
+Subsequently, it is invoked with a trailing pair of parentheses.
+
+Core Functions of IIFE
+Encapsulation: Through lexical scoping, IIFEs safeguard variables from leaking into the global scope. This, in turn, 
+averts unintended variable tampering in the global context.
+
+Data Hiding: Internal functions or data can be hidden from external access, providing a mechanism for information concealment 
+and access control.
+
+Initialization: The IIFE structure is ideal for setting up initial conditions, like binding events or pre-processing data.
+
+Use Cases
+Avoiding Variable Pollution: When interfacing with libraries or inserting code snippets, IIFEs prevent global scope pollution.
+
+Module Patterns: IIFEs, in combination with closures, lay the groundwork for modular code organization by shielding private 
+variables and functions.
+
+Modern Alternatives
+With the introduction of ES6 and its let and const declarations, as well as block-scoped lexical environments, the necessity 
+of IIFEs has reduced. Additionally, arrow functions provide a more concise method for defining immediately invoked functions.
+
+IIFE Variants
+Parentheses Invocation: A pair of parentheses immediately invoke the enclosed function. While this approach is more extensive, 
+it's devoid of self-documenting advantages.
+
+(function(){
+    console.log('Invoked!');
+})();
+Wrapping in Operators: Similar to using parentheses for invocation, the !, +, or - operators are sometimes used for invoking clarity. 
+For instance:
+
+!function(){
+    console.log('Invoked!');
+}();
+Named IIFE: Though not as common, naming an IIFE can assist with self-referencing. This is most effective when the 
+intention is to have a more comprehensive stack trace during debugging.
+
+(function factorial(n){
+    if (n <= 1) return 1;
+    return n * factorial(n-1);
+})(5);
+Caution on Minification
+When leveraging IIFEs, exercise caution while using minifiers to shrink JavaScript files. Minification might lead to 
+unintended outcomes, altering the previous scope expectations.

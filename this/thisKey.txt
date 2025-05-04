@@ -1,0 +1,32 @@
+What is the 'this keyword' and how does its context change?
+In JavaScript, the context of this refers to the execution context, typically an object that owns the function where this is used.
+
+'this' in the Global Scope
+In non-strict mode, this in the global scope refers to the window object. In strict mode, this is undefined.
+
+'this' in Functions
+In non-arrow functions, the value of this depends on how the function is invoked. When invoked:
+
+As a method of an object: this is the object.
+Alone: In a browser, this is window or global in Node.js. In strict mode, it's undefined.
+With call, apply, or bind: this is explicitly set.
+As a constructor (with new): this is the newly created object.
+'this' in Arrow Functions
+Arrow functions have a fixed context for this defined at function creation and are not changed by how they are invoked.
+
+They do not have their own this.
+They use the this from their surrounding lexical context (the enclosing function or global context).
+Code Example: Global Context
+Here is the JavaScript code:
+
+// Main
+let globalVar = 10;
+
+function globalFunction() {
+    console.log('Global this: ', this.globalVar);
+    console.log('Global this in strict mode: ', this);
+}
+
+globalFunction();  // Output: 10, window or undefined (in strict mode)
+
+// In Node.js, it will be different, because "window" is not defined. But "this" will refer to the global object.
