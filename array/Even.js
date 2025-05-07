@@ -9,3 +9,17 @@ const evenNum = even(arr);
  
 const evenNumber = arr.filter(i=> i%2 == 0 );
 console.log(evenNumber);
+
+
+
+function EvenNum(ar){
+    let evenNum = [];
+    for(let i = 0; i < ar.length; i++){
+        if(ar[i]%2 == 0){
+            evenNum.push(ar[i])
+        }
+    }
+    return evenNum;
+};
+
+console.log("this is array of even num",EvenNum(arr))

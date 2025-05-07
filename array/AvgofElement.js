@@ -1,29 +1,27 @@
 let marks = [95, 55, 68, 82, 91, 45];
 
-let sum = 0;
+function averageOfElem() {
+  let sum = 0;
 
-for(index=0; index<marks.length; index++){
+  for (index = 0; index < marks.length; index++) {
     sum += marks[index];
-    console.log(marks[index]);    
+    console.log(marks[index]);
+  }
+
+  console.log(`Add of the all numbers ${sum}`);
+  console.log("average of marks:- ", sum / marks.length + 1);
 };
 
-console.log(`Add of the all numbers ${sum}`);
-
-console.log("average of marks:- ",sum/marks.length+1);
-
-
-
+averageOfElem();
 
 // useEffect(()=>{
 //     const fetchData = async()=>{
-//         const response = await fetch('https://jsonplaceholder.typicode.com/posts/'+{id}); 
+//         const response = await fetch('https://jsonplaceholder.typicode.com/posts/'+{id});
 //         const data = await response.json();
 //         setname(data);
 //     }
 //     fetchData();
 // },[dependency]);
-
-
 
 // ////////////////////////class component /////////////
 
@@ -51,8 +49,6 @@ console.log("average of marks:- ",sum/marks.length+1);
 //         )
 //     }
 // };
-
-
 
 // class helloWord extends React.Component{
 
